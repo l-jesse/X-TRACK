@@ -17,6 +17,6 @@
        "maintainer": true
     }
   ],
-  "frameworks": "arduino",
+  "frameworks": "*",
   "platforms": "*"
 }

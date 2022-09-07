@@ -1,0 +1,12 @@
+{
+    "name": "BMP280",
+    "version": "1.0.0",
+    "frameworks": "*",
+    "keywords": "BMP 280",
+    "description": "BMP drive",
+	"build": {
+		"srcFilter": [
+            "+<*>"
+        ]
+	}
+}

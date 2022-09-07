@@ -62,16 +62,16 @@ extern "C"
         Reboot();
     }
     
-    __asm void HardFault_Handler()
+    void HardFault_Handler()
     {
-        extern vApplicationHardFaultHook
-        extern cm_backtrace_fault
-            
-        mov r0, lr
-        mov r1, sp
-        bl cm_backtrace_fault
-        bl vApplicationHardFaultHook
-fault_loop
-        b fault_loop
+        // extern vApplicationHardFaultHook
+        // extern cm_backtrace_fault
+
+        __ASM volatile("mov r0, lr");
+        __ASM volatile("mov r1, sp");
+        __ASM volatile("bl cm_backtrace_fault");
+        __ASM volatile("bl vApplicationHardFaultHook");
+        __ASM volatile("fault_loop:");
+        __ASM volatile("b fault_loop");
     }
 }

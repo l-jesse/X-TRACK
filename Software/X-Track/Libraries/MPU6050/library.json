@@ -1,0 +1,12 @@
+{
+    "name": "MPU6050",
+    "version": "1.0.0",
+    "frameworks": "*",
+    "keywords": "MPU6050",
+    "description": "MPU6050",
+	"build": {
+		"srcFilter": [
+            "+<*>"
+        ]
+	}
+}

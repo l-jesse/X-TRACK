@@ -1,0 +1,13 @@
+{
+    "name": "Adafruit_ST7789",
+    "version": "1.0.0",
+    "frameworks": "*",
+    "keywords": "tft st7789",
+    "description": "tft drive",
+	"build": {
+		"srcFilter": [
+            "+<*>",
+            "-<./Adafruit_ST7789V2.cpp>"
+        ]
+	}
+}

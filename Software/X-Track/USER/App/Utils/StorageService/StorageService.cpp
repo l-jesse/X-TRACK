@@ -23,6 +23,9 @@
 #include "StorageService.h"
 #include "ArduinoJson.h"
 #include "lvgl/lvgl.h"
+
+#undef min
+#undef max
 #include <algorithm>
 
 #define USE_STATIC_JSON_DOC        1

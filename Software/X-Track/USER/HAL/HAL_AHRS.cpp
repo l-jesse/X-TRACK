@@ -51,7 +51,7 @@ static void MahonyAHRSupdate(
         q2q3 = q2 * q3;
         q3q3 = q3 * q3;
 
-        // Reference direction of Earth¡¯s magnetic field
+        // Reference direction of Earthï¿½ï¿½s magnetic field
 
         hx = 2.0f * (mx * (0.5f - q2q2 - q3q3) + my * (q1q2 - q0q3) + mz * (q1q3 + q0q2));
         hy = 2.0f * (mx * (q1q2 + q0q3) + my * (0.5f - q1q1 - q3q3) + mz * (q2q3 - q0q1));
@@ -123,8 +123,4 @@ static void MahonyAHRSupdate(
     q1 *= recipNorm;
     q2 *= recipNorm;
     q3 *= recipNorm;
-}
-
-void HAL::AHRS_Update()
-{
 }

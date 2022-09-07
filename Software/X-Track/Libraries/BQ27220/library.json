@@ -1,0 +1,12 @@
+{
+    "name": "BQ27220",
+    "version": "1.0.0",
+    "frameworks": "*",
+    "keywords": "BQ 280",
+    "description": "BQ drive",
+	"build": {
+		"srcFilter": [
+            "+<*>"
+        ]
+	}
+}

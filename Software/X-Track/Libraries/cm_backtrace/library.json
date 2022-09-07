@@ -1,0 +1,13 @@
+{
+    "name": "cm_backtrace",
+    "version": "1.0.0",
+    "frameworks": "*",
+    "keywords": "cm_backtrace",
+    "description": "cm_backtrace",
+	"build": {
+		"srcFilter": [
+            "+<*>",
+            "-<fault_handler>"
+        ]
+	}
+}

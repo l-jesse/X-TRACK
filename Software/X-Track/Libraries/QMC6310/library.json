@@ -1,0 +1,12 @@
+{
+    "name": "QMC6310",
+    "version": "1.0.0",
+    "frameworks": "*",
+    "keywords": "QMC6310",
+    "description": "QMC6310",
+	"build": {
+		"srcFilter": [
+            "+<*>"
+        ]
+	}
+}

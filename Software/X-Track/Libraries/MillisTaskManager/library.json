@@ -1,0 +1,12 @@
+{
+    "name": "MillisTaskManager",
+    "version": "1.0.0",
+    "frameworks": "*",
+    "keywords": "MillisTaskManager",
+    "description": "MillisTaskManager",
+	"build": {
+		"srcFilter": [
+            "+<*>"
+        ]
+	}
+}

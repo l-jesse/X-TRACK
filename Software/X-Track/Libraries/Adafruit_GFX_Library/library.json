@@ -1,0 +1,27 @@
+{
+    "name": "Adafruit_GFX_Library",
+    "version": "1.2.3",
+    "frameworks": "*",
+    "keywords": "Adafruit GFX graphics",
+    "description": "Adafruit GFX graphics core library, this is the 'core' class that all our other graphics libraries derive from.",
+    "url": "https://github.com/adafruit/Adafruit-GFX-Library",
+    "authors":
+    [
+        {
+            "name": "Adafruit <info@adafruit.com>"
+        }
+    ],
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/adafruit/Adafruit-GFX-Library"
+    },
+	"build": {
+		"srcFilter": [
+            "+<*>",
+            "-<./Adafruit_SPITFT.cpp>",
+            "-<./fontconvert>"
+        ]
+	}
+}
+

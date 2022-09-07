@@ -31,7 +31,9 @@
 #define __AT32F4__
 #define __STM32__
 #define __STM32F4__
+#ifndef F_CPU
 #define F_CPU                       SystemCoreClock
+#endif
 #define CYCLES_PER_MICROSECOND      (F_CPU / 1000000U)
 
 typedef GPIO_Type                   GPIO_TypeDef;

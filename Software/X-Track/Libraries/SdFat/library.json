@@ -1,0 +1,17 @@
+{
+    "name": "SdFat",
+    "version": "1.1.4",
+    "frameworks": "*",
+    "keywords": "Data Storage",
+    "description": "FAT16/FAT32 file system for SD cards.",
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/greiman/SdFat.git"
+    },
+	"build": {
+		"srcFilter": [
+            "+<*>"
+        ]
+	}
+}

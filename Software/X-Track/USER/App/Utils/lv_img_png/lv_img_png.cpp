@@ -66,8 +66,15 @@ const lv_obj_class_t lv_img_png_class =
     .base_class = &lv_obj_class,
     .constructor_cb = lv_img_png_constructor,
     .destructor_cb = lv_img_png_destructor,
+    #if LV_USE_USER_DATA
+        .user_data = NULL,
+    #endif
     .event_cb = lv_img_png_event,
-    .instance_size = sizeof(lv_img_png_t),
+    .width_def = 0,
+    .height_def = 0,
+    .editable = 2,
+    .group_def = 2,
+    .instance_size = sizeof(lv_img_png_t)
 };
 
 /**********************
